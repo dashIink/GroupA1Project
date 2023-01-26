@@ -4,7 +4,7 @@
     <property name="java.specification.version" value="19"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\dlrea\JavaProjects\BinaryCalculator\target\test-classes;C:\Users\dlrea\JavaProjects\BinaryCalculator\target\classes;C:\Users\dlrea\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\dlrea\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.class.path" value="C:\Users\dlrea\JavaProjects\BinaryCalculatorGit\BinaryCalculator\target\test-classes;C:\Users\dlrea\JavaProjects\BinaryCalculatorGit\BinaryCalculator\target\classes;C:\Users\dlrea\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\dlrea\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CA"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-19\bin"/>
-    <property name="sun.java.command" value="C:\Users\dlrea\AppData\Local\Temp\surefire286912789707127508\surefirebooter1706227090205071919.jar C:\Users\dlrea\AppData\Local\Temp\surefire286912789707127508 2023-01-25T23-03-12_340-jvmRun1 surefire3241256734637653995tmp surefire_07354475978220478435tmp"/>
+    <property name="sun.java.command" value="C:\Users\dlrea\AppData\Local\Temp\surefire17614974568016686839\surefirebooter3645964420466838335.jar C:\Users\dlrea\AppData\Local\Temp\surefire17614974568016686839 2023-01-25T23-42-56_308-jvmRun1 surefire9581169760266742815tmp surefire_02732337909465454420tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\dlrea\JavaProjects\BinaryCalculator\target\test-classes;C:\Users\dlrea\JavaProjects\BinaryCalculator\target\classes;C:\Users\dlrea\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\dlrea\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\dlrea\JavaProjects\BinaryCalculatorGit\BinaryCalculator\target\test-classes;C:\Users\dlrea\JavaProjects\BinaryCalculatorGit\BinaryCalculator\target\classes;C:\Users\dlrea\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\dlrea\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\dlrea"/>
     <property name="user.language" value="en"/>
@@ -25,12 +25,12 @@
     <property name="java.version.date" value="2023-01-17"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-19"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="C:\Users\dlrea\JavaProjects\BinaryCalculator"/>
+    <property name="basedir" value="C:\Users\dlrea\JavaProjects\BinaryCalculatorGit\BinaryCalculator"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\dlrea\AppData\Local\Temp\surefire286912789707127508\surefirebooter1706227090205071919.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\dlrea\AppData\Local\Temp\surefire17614974568016686839\surefirebooter3645964420466838335.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="19.0.2+7-44"/>
@@ -45,7 +45,7 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\dlrea\AppData\Local\Temp\"/>
     <property name="java.version" value="19.0.2"/>
-    <property name="user.dir" value="C:\Users\dlrea\JavaProjects\BinaryCalculator"/>
+    <property name="user.dir" value="C:\Users\dlrea\JavaProjects\BinaryCalculatorGit\BinaryCalculator"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
@@ -58,5 +58,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="63.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="com.ontariotechu.sofe3980U.AppTest" time="0.001"/>
+  <testcase name="shouldAnswerWithTrue" classname="com.ontariotechu.sofe3980U.AppTest" time="0.002"/>
 </testsuite>
