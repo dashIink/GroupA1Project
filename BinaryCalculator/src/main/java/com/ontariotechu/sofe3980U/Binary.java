@@ -1,5 +1,7 @@
 package com.ontariotechu.sofe3980U;
 
+import java.sql.SQLOutput;
+
 /**
  * Unsigned integer Binary variable
  *
@@ -30,11 +32,11 @@ public class Binary
 		//beg has the index of the first non zero digit in the number
 		this.number=number.substring(beg); // exclude the trailing zeros if any
 		// uncomment the following code
-		/*
+
 		if(this.number=="") { // replace empty strings with a single zero
 			this.number="0";
 		}
-		*/
+
     }
 	/**
 	* Return the binary value of the variable
@@ -78,5 +80,34 @@ public class Binary
 		Binary result=new Binary(num3);  // create a binary object with the calculated value.
 		return result;
 		
+	}
+
+	public static Binary OR(Binary num1, Binary num2)
+	{
+		String result = "";
+		for (int i = 0; i < num1.getValue().length(); i++)
+		{
+			char b1 = num1.getValue().charAt(i);
+			char b2 = num2.getValue().charAt(i);
+			result += ((Integer.parseInt(String.valueOf(b1)) | Integer.parseInt(String.valueOf(b2))));
+		}
+		Binary resultBinary =new Binary(result);
+		return resultBinary;
+	}
+
+	public static Binary AND(Binary num1, Binary num2)
+	{
+		String result = "";
+		for (int i = 0; i < num1.getValue().length(); i++)
+		{
+			char b1 = num1.getValue().charAt(i);
+			char b2 = num2.getValue().charAt(i);
+			result += ((Integer.parseInt(String.valueOf(b1)) & Integer.parseInt(String.valueOf(b2))));
+
+		}
+
+		Binary resultBinary =new Binary(result);
+		return resultBinary;
+
 	}
 }	
