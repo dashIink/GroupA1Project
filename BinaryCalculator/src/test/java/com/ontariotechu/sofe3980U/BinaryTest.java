@@ -128,12 +128,44 @@ import org.junit.Test;
             assertTrue( binary3.getValue().equals("1110"));
         }
 
+        @Test public void OR2()
+        {
+            Binary binary1=new Binary("0110");
+            Binary binary2=new Binary("1010");
+            Binary binary3=Binary.OR(binary1,binary2);
+            assertTrue( binary3.getValue().equals("1110"));
+        }
+
+        @Test public void OR3()
+        {
+            Binary binary1=new Binary("1110");
+            Binary binary2=new Binary("0010");
+            Binary binary3=Binary.OR(binary1,binary2);
+            assertTrue( binary3.getValue().equals("1110"));
+        }
+
         @Test public void AND1()
         {
             Binary binary1=new Binary("1110");
             Binary binary2=new Binary("1010");
             Binary binary3=Binary.AND(binary1,binary2);
             assertTrue( binary3.getValue().equals("1010"));
+        }
+
+        @Test public void AND2()
+        {
+            Binary binary1=new Binary("0110");
+            Binary binary2=new Binary("1010");
+            Binary binary3=Binary.AND(binary1,binary2);
+            assertTrue( binary3.getValue().equals("10"));
+        }
+
+        @Test public void AND3()
+        {
+            Binary binary1=new Binary("1110");
+            Binary binary2=new Binary("0010");
+            Binary binary3=Binary.AND(binary1,binary2);
+            assertTrue( binary3.getValue().equals("10"));
         }
     }
 

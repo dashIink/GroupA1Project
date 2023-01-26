@@ -84,11 +84,36 @@ public class Binary
 
 	public static Binary OR(Binary num1, Binary num2)
 	{
+		
+		String s1 = num1.getValue();
+		String s2 = num2.getValue();
+
+		// In the case of numbers of different digit amounts, equalize them by adding 0's the the front of the shorter number
+
+		if (s1.length() != s2.length()){
+
+			//temp will have the appropriate amount of 0's added and be concatenated to the shorter number
+			String temp = "";
+			if (s1.length() > s2.length()){
+				for(int i = s1.length()-s2.length(); i > 0; i--){
+					temp += "0";
+				}
+				s2 = temp + s2;
+			}
+			else{
+				for(int i = s2.length()-s1.length(); i > 0; i--){
+					temp += "0";
+				}
+				s1 = temp + s1;
+			}
+		}
+
+		//Compute the OR value
 		String result = "";
-		for (int i = 0; i < num1.getValue().length(); i++)
+		for (int i = 0; i < s1.length(); i++)
 		{
-			char b1 = num1.getValue().charAt(i);
-			char b2 = num2.getValue().charAt(i);
+			char b1 = s1.charAt(i);
+			char b2 = s2.charAt(i);
 			result += ((Integer.parseInt(String.valueOf(b1)) | Integer.parseInt(String.valueOf(b2))));
 		}
 		Binary resultBinary =new Binary(result);
@@ -97,11 +122,36 @@ public class Binary
 
 	public static Binary AND(Binary num1, Binary num2)
 	{
+		
+		String s1 = num1.getValue();
+		String s2 = num2.getValue();
+
+		// In the case of numbers of different digit amounts, equalize them by adding 0's the the front of the shorter number
+
+		if (s1.length() != s2.length()){
+
+			//temp will have the appropriate amount of 0's added and be concatenated to the shorter number
+			String temp = "";
+			if (s1.length() > s2.length()){
+				for(int i = s1.length() - s2.length(); i > 0; i--){
+					temp += "0";
+				}
+				s2 = temp + s2;
+			}
+			else{
+				for(int i = s2.length() - s1.length(); i > 0; i--){
+					temp += "0";
+				}
+				s1 = temp + s1;
+			}
+		}
+
+		//Compute the AND value
 		String result = "";
-		for (int i = 0; i < num1.getValue().length(); i++)
+		for (int i = 0; i < s1.length(); i++)
 		{
-			char b1 = num1.getValue().charAt(i);
-			char b2 = num2.getValue().charAt(i);
+			char b1 = s1.charAt(i);
+			char b2 = s2.charAt(i);
 			result += ((Integer.parseInt(String.valueOf(b1)) & Integer.parseInt(String.valueOf(b2))));
 
 		}
