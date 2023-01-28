@@ -48,7 +48,7 @@ mvn test
 - **Sarah Wedge** - *100785532*
 - **Alden O’Cain** - *100558599*
 - **Osamah Al-Bayati** - *100782415*
-- **Michael Barrett** - *100??????*
+- **Michael Barrett** - *100779360*
 
 ## License
 
