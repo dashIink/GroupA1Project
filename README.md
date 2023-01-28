@@ -1,6 +1,4 @@
-# Video Overview
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eB1J08dD77U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[Video Overview](https://www.youtube.com/watch?v=eB1J08dD77U)
 
 # Binary Calculator
 
