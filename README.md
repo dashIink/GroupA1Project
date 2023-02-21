@@ -31,18 +31,13 @@ mvn clean package
 
 Run the program:
 
-java -cp target/BinaryCalculator-1.0-SNAPSHOT.jar com.ontariotechu.sofe3980u.App
-
-### Running the tests
-
-Run the JUnit tests using Maven:
-
-mvn test
+mvn test spring-boot:run
 
 ## Built With
 
 - [Maven](https://maven.apache.org/) - Dependency Management
 - [JUnit](https://junit.org/) - Testing Framework
+- [Spring Boot](https://spring.io/projects/spring-boot/) - Web Application Framework
 
 ## Authors
 
