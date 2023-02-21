@@ -1,6 +1,6 @@
 [Video Overview](https://www.youtube.com/watch?v=vM4yo5_UWqA)
 
-# Binary Calculator
+# Binary Calculator (Spring Boot)
 
 This project demonstrates the ability to work with binary numbers in Java, including performing basic arithmetic operations on them. The program includes a Binary class with a constructor that stores a binary number as a String and truncates any leading zeros. It also includes methods such as `getValue()` to return the binary number as a string and `add()` to perform a bitwise add on two Binary objects and return a new Binary object representing the result.
 
