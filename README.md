@@ -19,57 +19,57 @@ These instructions will guide you through deploying the Binary Calculator app us
 
 ### Deploying using commands
 
-Clone the repository to your local machine:
+Clone the repository to your local machine:<br>
 `git clone https://github.com/<username>/BinaryCalculator.git`
 
-Navigate to the project directory:
+Navigate to the project directory:<br>
 `cd BinaryCalculator`
 
-Compile and package the project using Maven:
+Compile and package the project using Maven:<br>
 `mvn clean package`
 
-Build the Docker image and push it to Google Cloud Registry:
-`docker build -t gcr.io/<Project-ID>/binarycalculator .`
+Build the Docker image and push it to Google Cloud Registry:<br>
+`docker build -t gcr.io/<Project-ID>/binarycalculator .` <br>
 `docker push gcr.io/<Project-ID>/binarycalculator`
 
-Create a Kubernetes deployment:
+Create a Kubernetes deployment:<br>
 `kubectl create deployment binarycalculator-deployment --image gcr.io/<Project-ID>/binarycalculator --port=8080`
 
-Expose the deployment as a LoadBalancer service:
+Expose the deployment as a LoadBalancer service:<br>
 `kubectl expose deployment binarycalculator-deployment --type=LoadBalancer --name=binarycalculator-service`
 
-Wait for the external IP address to be assigned to the service:
-`kubectl get services binarycalculator-service --watch`
+Wait for the external IP address to be assigned to the service:<br>
+`kubectl get services binarycalculator-service --watch` <br>
 Note the external IP address assigned to the service.
 
-Access the Binary Calculator app using the external IP address:
+Access the Binary Calculator app using the external IP address:<br>
 `http://<External-IP-Address>:8080/`
 
 ### Deploying using YAML file
 
-Clone the repository to your local machine:
+Clone the repository to your local machine:<br>
 `git clone https://github.com/<username>/BinaryCalculator.git`
 
-Navigate to the project directory:
+Navigate to the project directory:<br>
 `cd BinaryCalculator`
 
-Compile and package the project using Maven:
+Compile and package the project using Maven:<br>
 `mvn clean package`
 
-Build the Docker image and push it to Google Cloud Registry:
-`docker build -t gcr.io/<Project-ID>/binarycalculator .`
+Build the Docker image and push it to Google Cloud Registry:<br>
+`docker build -t gcr.io/<Project-ID>/binarycalculator .` <br>
 `docker push gcr.io/<Project-ID>/binarycalculator`
 
-Deploy the app using the binarycalculator-deploy.yaml file:
-`cd kubernetes`
-`kubectl apply -f binarycalculator-deploy.yaml`
+Deploy the app using the binarycalculator-deploy.yaml file:<br>
+`cd kubernetes` <br>
+`kubectl apply -f binarycalculator-deploy.yaml` <br>
 `kubectl apply -f binarycalculator-svc.yaml`
 
-Wait for the external IP address to be assigned to the service:
-`kubectl get services binarycalculator-service --watch`
+Wait for the external IP address to be assigned to the service:<br>
+`kubectl get services binarycalculator-service --watch` <br>
 Note the external IP address assigned to the service.
 
-Access the Binary Calculator app using the external IP address:
+Access the Binary Calculator app using the external IP address:<br>
 `http://<External-IP-Address>:8080/`
 
 
