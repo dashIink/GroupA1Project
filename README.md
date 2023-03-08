@@ -39,7 +39,7 @@ Expose the deployment as a LoadBalancer service:<br>
 `kubectl expose deployment binarycalculator-deployment --type=LoadBalancer --name=binarycalculator-service`
 
 Wait for the external IP address to be assigned to the service:<br>
-`kubectl get services binarycalculator-service --watch` <br>
+`kubectl get services --watch` <br>
 Note the external IP address assigned to the service.
 
 Access the Binary Calculator app using the external IP address:<br>
@@ -60,13 +60,11 @@ Build the Docker image and push it to Google Cloud Registry:<br>
 `docker build -t gcr.io/<Project-ID>/binarycalculator .` <br>
 `docker push gcr.io/<Project-ID>/binarycalculator`
 
-Deploy the app using the binarycalculator-deploy.yaml file:<br>
-`cd kubernetes` <br>
-`kubectl apply -f binarycalculator-deploy.yaml` <br>
-`kubectl apply -f binarycalculator-svc.yaml`
+Deploy the app using the binary-calculator.yaml file:<br>
+`kubectl apply -f binary-calculator.yaml`
 
 Wait for the external IP address to be assigned to the service:<br>
-`kubectl get services binarycalculator-service --watch` <br>
+`kubectl get services --watch` <br>
 Note the external IP address assigned to the service.
 
 Access the Binary Calculator app using the external IP address:<br>
