@@ -1,4 +1,4 @@
-[Video - MySQL deploying](https://www.youtube.com/watch?v=vM4yo5_UWqA) <br>
+[Video - MySQL deploying](https://www.youtube.com/watch?v=1es1_PCO2MM) <br>
 [Video - Deploying and Executing, Binary Calculator Application](https://www.youtube.com/watch?v=vM4yo5_UWqA)
 
 # Binary Calculator
